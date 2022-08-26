@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+const request = require("request");
+request("https://www.worldometers.info/coronavirus/", cb);
+
+function cb(err,res,body)  // res : response 
+{
+    //console.error("error", err); //Prints the error if encountered
+    //console.log(res);   //Prints the response status code if a response was received
+    console.log(body);  //Prints the html of the mentioned link
+}
+
+
+=======
+const request = require("request");
+request("https://www.worldometers.info/coronavirus/", cb);
+
+function cb(err,res,body)  // res : response 
+{
+    //console.error("error", err); //Prints the error if encountered
+    //console.log(res);   //Prints the response status code if a response was received
+    console.log(body);  //Prints the html of the mentioned link
+}
+
+
+>>>>>>> 3be21ec477184d7e6f742900df745e7b48d8a3cb

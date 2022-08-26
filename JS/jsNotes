@@ -1,0 +1,16 @@
+1) what is Event Bubbling ?
+
+s: Bubbling 
+
+
+2) what is Event Capturig ?
+
+s: it is an event which trickles down the DOM hierarchy, it has a performance issue and is very expensive
+
+Note : Eventbubling is used by default if we do not pass any third argument insdie the eventlistener function
+
+Note : Event Capturing is also known as Event Trickling
+
+Note : According to W3C model the whole chain is anyways followed, the trickling down happens then the bubbling up happens whether you do anything 
+
+Note : According to W3C, first the event propogation happens TOP-DOWN the hierarchy ie Capturing happens first than bubbling out happens and the callback methods are called according to the parameters what we pass (true and false) 
