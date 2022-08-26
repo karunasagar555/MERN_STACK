@@ -12,3 +12,21 @@ npm run build -> Bundles the app into static files for production.
 npm test -> Starts the test runner.
 
 npm run eject -> Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!, We suggest that you begin by typing, cd reactapp then npm start.
+
+without React : HTML/CSS/JS -> DOM -> render on Browser
+
+NOTE : React uses an algorithm called #Diffing, now what's the use of this algo ? It Identifies changes made in code.
+
+React : code-> Diffing Algo -> Virtual DOM -> DOM -> render on Browser
+
+Q) what does this virtual DOM do ?
+s: it identifies the required changes.
+
+Q) what are the advantages of React ?
+S:  1) very fast
+    2) Easy Event handling (shortcuts)
+    3) small libraray compared to angular which is vast -> easy to learn
+    4) It manages UI by State - let us assume state as a variable, on State change UI is changed accordingly.
+
+
+NOTE : In React, DOM is created only for the changes that were made and combines with the former DOM, In HTML/CSS/JS, the whole page is reloaded (In react, only that part is reloaded where the changes were made) once any changes are made and a whole new DOM is created everytime.
