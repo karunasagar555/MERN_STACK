@@ -1,4 +1,4 @@
-
+// Guess the output
 
 const num = 5;
 num = 10;
