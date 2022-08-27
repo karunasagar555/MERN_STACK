@@ -65,4 +65,14 @@ Q) what are callback Functions in JS ?
 S: the function which is passed into another function is known as a callback function.
 
 Q) what is the significance of this callBack function ?
-S: this function is very powerful in JS, it gives us access to the whole Asynchronous world in a synchronous single-threaded language, because of callBack functions we can do ASYNCHROOUS things inside JS.
+S: this function is very powerful in JS, it gives us access to the whole Asynchronous world in a synchronous single-threaded language, because of callBack functions we can do ASYNCHRONOUS things inside JS.
+
+Q) what is MAIN THREAD ??
+s : // callStack aka MAIN THREAD, callstack is also called as MAIN THREAD.
+
+
+Q) what is blocking the MAIN THREAD ?
+s: if any operation blocks this callstack that is called blocking the MAIN THREAD.
+
+Q) what is setTimeout ?
+S: It is a web API/Browser API
