@@ -1,7 +1,9 @@
-/*let multiply = function(x,y){
+//functionCurryingUsingClosures
+
+let multiply = function(x,y){
     console.log(x * y);
 }
-*/
+
 
 let multiply = function(x){
     return function(y){
