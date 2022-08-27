@@ -1,4 +1,4 @@
-/*//EventBubbling
+//EventBubbling
 
 document.querySelector("#grandParent")
  .addEventListener('click', () => {
@@ -39,7 +39,7 @@ document.querySelector("#child")
 document.querySelector("#grandParent")
  .addEventListener('click', () => {
     console.log("grandParentClicked");
- }, true); // Top-Down hierarchy is followed so Event Capturing takes place here
+ }, true); // Top-Down hierarchy is followed so Event Capturing takes place here.
 
  document.querySelector("#parent")
  .addEventListener('click', () => {
