@@ -1,35 +1,53 @@
 // Stop Propogation Method in Bubbling
 
-document.querySelector("#grandParent")
- .addEventListener('click', () => {
+document.querySelector("#grandParent").addEventListener(
+  "click",
+  () => {
     console.log("grandParentClicked");
- }, false); 
+  },
+  false
+);
 
- document.querySelector("#parent")
- .addEventListener('click', (e) => {
+document.querySelector("#parent").addEventListener(
+  "click",
+  (e) => {
     console.log("parentClicked");
     e.stopPropagation(); // the event propogation won't bubble out and all the eventListeners won't be called
-}, false); 
+  },
+  false
+);
 
-document.querySelector("#child")
- .addEventListener('click', () => {
+document.querySelector("#child").addEventListener(
+  "click",
+  () => {
     console.log("childClicked");
- }, false);
+  },
+  false
+);
 
- // Stop Propogation Method in Capturing
+// Stop Propogation Method in Capturing
 
- document.querySelector("#grandParent")
- .addEventListener('click', () => {
+document.querySelector("#grandParent").addEventListener(
+  "click",
+  () => {
     console.log("grandParentClicked");
- }, true); 
+  },
+  true
+);
 
- document.querySelector("#parent")
- .addEventListener('click', (e) => {
+document.querySelector("#parent").addEventListener(
+  "click",
+  (e) => {
     console.log("parentClicked");
-}, true); 
+  },
+  true
+);
 
-document.querySelector("#child")
- .addEventListener('click', (e) => {
+document.querySelector("#child").addEventListener(
+  "click",
+  (e) => {
     console.log("childClicked");
     e.stopPropagation(); //Propogatio gonna stop here
- }, true);
+  },
+  true
+);
