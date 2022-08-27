@@ -74,5 +74,6 @@ s : // callStack aka MAIN THREAD, callstack is also called as MAIN THREAD.
 Q) what is blocking the MAIN THREAD ?
 s: if any operation blocks this callstack that is called blocking the MAIN THREAD.
 
+
 Q) what is setTimeout ?
 S: It is a web API/Browser API
