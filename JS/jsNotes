@@ -1,3 +1,8 @@
+NOTE : Javascript is a synchronous and single-threaded language (meaning it can only do one thing at a time and in a specific order)
+
+
+
+
 
 ///// Function Statements & Function Expressions
 
@@ -55,3 +60,9 @@ Note : Event Capturing is also known as Event Trickling
 Note : According to W3C model the whole chain is anyways followed, the trickling down happens then the bubbling up happens whether you do anything 
 
 Note : According to W3C, first the event propogation happens TOP-DOWN the hierarchy ie Capturing happens first than bubbling out happens and the callback methods are called according to the parameters what we pass (true and false) 
+
+Q) what are callback Functions in JS ?
+S: the function which is passed into another function is known as a callback function.
+
+Q) what is the significance of this callBack function ?
+S: this function is very powerful in JS, it gives us access to the whole Asynchronous world in a synchronous single-threaded language, because of callBack functions we can do ASYNC things inside JS.
