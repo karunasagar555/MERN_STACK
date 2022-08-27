@@ -30,3 +30,14 @@ S:  1) very fast
 
 
 NOTE : In React, DOM is created only for the changes that were made and combines with the former DOM, In HTML/CSS/JS, the whole page is reloaded (In react, only that part is reloaded where the changes were made) once any changes are made and a whole new DOM is created everytime.
+
+About React Componenets - they are Isolated, Reusable, Independent pieces of code. 
+
+Q) how many types of react components ?
+
+s:  1)Functional Components 2) Class Components
+
+
+Q) what is JSX ?
+
+S:  Javascript + XML - > It allows us to write HTML inside of JS and places them in DOM without using functions like createElement() or appendChild() 
