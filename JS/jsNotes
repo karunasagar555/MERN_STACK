@@ -1,3 +1,44 @@
+
+///// Function Statements & Function Expressions
+
+Q) what is a Function Statement ?
+
+S:  function a() {
+       console.log("a called");
+}
+
+NOTES : Functions are HEART of JS, they are the FIRST CLASS CITIZENS.
+
+Q) what is a Function Expression ?
+
+S: we can assign a function to a variable, function acts like a value here, we are putting function into b.
+
+var b = function () {
+    console.log("b called");
+}
+
+NOTE : both Function Statements and Function Expressions are ways to create functions, the difference between these is in HOISTING.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////// Event Bubbling and Event Capturing
+
 1) what is Event Bubbling ?
 
 s: Bubbling 
