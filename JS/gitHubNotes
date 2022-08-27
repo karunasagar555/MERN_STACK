@@ -1,3 +1,6 @@
+<!-- Errors Encountered -->
+
+
 Q1) fatal: No configured push destination.                                                  
 Either specify the URL from the command-line or configure a remote repository using
 
@@ -45,3 +48,9 @@ s: git pull https://github.com/*username*/*repository*.git branchName
    git add .
    git commit -m "msg"
    git push
+
+Q5) how do you push yur code to GITHUB ?
+ 
+S: git add ./ git add filename (not necessary to include filename in quotes) 
+   git commit -m "message"
+   git push  
