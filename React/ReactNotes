@@ -41,3 +41,10 @@ s:  1)Functional Components 2) Class Components
 Q) what is JSX ?
 
 S:  Javascript + XML - > It allows us to write HTML inside of JS and places them in DOM without using functions like createElement() or appendChild() 
+
+Q) what does Babel do ?
+
+S: babel converts JSX -> JS
+
+HTML/CSS/JS -> Browser (render on Browser)
+JSX -> Babel -> JS -> Browser (render on Browser)
