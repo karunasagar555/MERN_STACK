@@ -29,8 +29,7 @@ hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 
-ans : git checkout branchName
-      git pull
+ans : git pull
       git add .
       git commit -m "msg"
       git push
@@ -54,3 +53,8 @@ Q5) how do you push yur code to GITHUB ?
 S: git add ./ git add filename (not necessary to include filename in quotes) 
    git commit -m "message"
    git push  
+
+
+Q6) On branch main
+Your branch is ahead of 'origin/main' by 2 commits ?
+S : git push
