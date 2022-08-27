@@ -1,4 +1,4 @@
-<!-- Errors Encountered -->
+<!-- Errors Encountered during code push -->
 
 
 Q1) fatal: No configured push destination.                                                  
@@ -16,13 +16,13 @@ Ans -> git remote add STUDY_MERN "https://github.com/karunasagar555/STUDY_MERN.g
 
 
 
-q2) how the fuck do you switch to a branch ?
+Q2) how the fuck do you switch to a branch ?
 ans : git checkout branchName -> eg: git checkout main (Switched to branch 'main')
 
 
 
 
-q3) ! [rejected]        main -> main (fetch first)
+Q3) ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'https://github.com/karunasagar555/STUDY_MERN.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
