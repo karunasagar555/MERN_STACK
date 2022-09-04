@@ -246,5 +246,20 @@ console.log(clone);       //-- [ 1, 2, 3 ]
 
 
 
-// 2)  Spread Operator using objects
+/// 2) Spread Operator using Objects 
 
+// const first = { name : 'karun'};
+// const second = { job : "Developer"};
+
+// const combine = {...first, ...second};
+// console.log(combine);   // { name: 'karun', job: 'Developer' }
+
+// const setCombine = {...first, ...second, Location : 'Bangalore'};
+// console.log(setCombine);   // { name: 'karun', job: 'Developer', Location: 'Bangalore' }
+
+// cloning of the object using spread operator 
+
+const first = { name : 'karun'};
+const clone = {...first};
+console.log(first);     //  { name: 'karun' }
+console.log(clone);     //  { name: 'karun' }
