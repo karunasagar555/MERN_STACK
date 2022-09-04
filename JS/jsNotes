@@ -147,3 +147,62 @@ If you have ever observed many companies like Flipkart and Paytm use localStorag
 And if you go and check the localStorage for Paytm you’ll also find that even they store a lot of data such as the recent searches for flights, recent cities you selected and even some session data into localStorage.
 
 One more important thing to note here is that due to security reasons it follows the same-origin policy. Same-Origin refers to the same Protocol, same host, and the same port. 
+
+
+// Array Methods -> Map method of array 
+
+
+Q) what is MAP method of array in JS ?
+
+S: whenever we wanna render a list of items 
+
+// Practical Demonstration
+
+1)
+
+const colors = ['red', 'green','pink']
+const items = colors.map(function(color){
+    return '<li>' + color + '</li>';
+});
+
+console.log(items);
+
+2) using Arrow Function
+
+const colors = ['red', 'green','pink']
+const items = colors.map(color => '<li>' + color + '</li>');
+console.log(items);
+
+3) using Template Literals (backticks - ``) in ES6 
+
+const colors = ['red', 'green','pink']
+const items = colors.map(color =>  `<li>${color}</li>`);
+console.log(items);
+
+NOTE : Map Method does not modify the original array.
+
+
+
+
+
+
+// Object Destructuring 
+
+Q) what is Object Destructuring  ???
+s: somewhere in the code, if we wanna extract the value of these properties of an object and wanna store them in seperate variables, then we use what is called  "Object Destructuring" .
+
+const address = {
+    street : "",
+    City :"",
+    Country: "",
+};
+
+// const street = address.street;
+// const City = address.City;      -- Now, what is the problem with this code ?? --> Repetitive Stuff, isn't it ?
+// const Country = address.Country;
+
+so, who's gonna solve this problem ??? --> TADA : we have Object Destructuring.
+
+// so now Object Destructuring solves this problem, so we can replace the above three lines of code with this below single line of code. 
+
+const {street, City, Country} = address;
