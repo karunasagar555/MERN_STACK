@@ -206,3 +206,33 @@ so, who's gonna solve this problem ??? --> TADA : we have Object Destructuring.
 // so now Object Destructuring solves this problem, so we can replace the above three lines of code with this below single line of code. 
 
 const {street, City, Country} = address;
+
+// Aliasing in Object Destructuring : const { street : st } = address;
+
+
+
+
+
+
+
+
+
+
+
+//////// Spread Operator IN JS 
+
+// 1)  Spread Operator using arrays 
+
+const first = [1,2,3];
+const second = [4,5,6];
+
+const combine = first.concat(second); // if we wanna combine both the arrays-> however this is an old method
+
+// here comes the new method which is Spread Operator
+
+const combined = [...first, ...second]; //Now why is this preferred over the former (above) one, let's see in the below lines.
+//console.log(combined); // [ 1, 2, 3, 4, 5, 6 ]
+
+const combinedd = [...first, 'a', ...second, 'end']; // this is preferred because we can add extra elements but in the former one it is complex to do this.
+console.log(combinedd); // [1, 2, 3, 'a', 4, 5, 6,'end']
+
