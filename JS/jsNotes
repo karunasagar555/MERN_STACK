@@ -263,3 +263,109 @@ const first = { name : 'karun'};
 const clone = {...first};
 console.log(first);     //  { name: 'karun' }
 console.log(clone);     //  { name: 'karun' }
+
+
+
+
+// Factory Functions or constructor Functions
+
+Q) what are Factory Functions ?
+S: just like how Factory produces products, here factory functions produce objects.
+
+Q) Now, when do we use Factory Functions ?
+S: if our objects have logic then we need a different way to create objects, that's when we use Factory Functions 
+or constructor Functions. (refer E:\CODE_WITH_MOSH\Code with Mosh -  JavaScript Basics for Beginners [AhLaN]\5. Objects--> Factory Functions video)
+
+Q) what are constructor Functions ?
+s : it is a function which is used to construct or create an object .
+
+NOTE : Every Object in JavaScript has a Property called Constructor and that references the function that was used to construct or create that object.
+
+
+Q) what is the differenece between Factory Functions & constructor Functions ?
+s: we use camelCase for Factory functions, and PascalCase for constructor Functions.
+
+NOTE : Every Constructor function starts with a Capital Letter.
+Eg : f Object () { [native code] } => here Object is a Built-In Constructor function. 
+// Some of the Built-In Constructor functions in JS are as follows:
+1) new String();
+2) new Boolean();       ///// Note that here all the constructor functions are started with capital letter.
+3) new Number(); 
+
+
+//For..in loop --> is used for objects
+
+
+// For..of Loop --> used for iterables such as arrays and maps
+
+Note : For..of loop can only be used with iterables such as arrays and maps.
+Objects are not iterable, hence we can't use For..of loop for objects, we get TypeError,object is not iterable .
+
+Note : if we still wanna use For..of loop for objects then we have a method called Object.keys(object_name) (it returns an array) ie
+for(let key of Object.keys(object_name) ), Note that here Object is a BUILT-IN CONSTRUCTOR FUNCTION.
+
+
+
+// Ternary Operator In JavaScript
+
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);
+
+
+//NOTE : Ternary or conditional Operator ( Ternary operator is also called as conditional operator ) 
+
+
+// Truthy Values in JavaScript - Anything that is not Falsy is Truthy
+
+
+// Falsy Values in JavaScript 
+
+1) false ( boolean false )
+2) '' (Empty String)
+3) NaN (Not a Number) 
+4) 0
+5) undefined
+6) null
+
+
+Q) what is NaN ??????????
+
+s: -- A special value in JS, whenever we deal with a mathematical calculation that does not produce a valid Number
+then NaN is returned. 
+
+
+
+// Logical Operators with Non-Booleans
+
+1) false || true
+s: true
+
+2) false || 'karun'
+S: "karun"
+
+3) false || 1
+s: 1
+
+
+Q) what is short circuiting in JS ?
+
+S : false || 1 || 2 --> 1 (no matter once it finds truthy operand value,the evaluation stops,it does not see the after value operands even if we have million operands after that, they are completely ignored. )
+
+
+// Default Value Property using Logical Operator with Non-Booleans
+ 
+1) Case 1
+
+let userColour = 'Pink';
+let defaultColor = 'white';
+let currentColor = userColour || defaultColor; 
+console.log(currentColor);                          Output --> Pink  
+
+
+2) Case 2
+
+let userColour = undefined;
+let defaultColor = 'white';
+let currentColor = userColour || defaultColor; 
+console.log(currentColor);                          Output --> White
