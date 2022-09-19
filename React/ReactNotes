@@ -1,6 +1,8 @@
 Q) what is React ?
 
-S : A JavaScript library for building user interfaces.
+S : A JavaScript library for building fast and Interactive user interfaces.
+It is a simple lightweight library, not a complete framework like angular.
+It's only responsible for rendering the view, nothing more.
 
 
 npx create-react-app project_Name -> npx create-react-app reactapp (Project Name should not contain Capital Letters) -> this command Installs packages like react,react-DOM and react-scripts with cra-template.
@@ -48,3 +50,26 @@ S: babel converts JSX -> JS
 
 HTML/CSS/JS -> Browser (render on Browser)
 JSX -> Babel -> JS -> Browser (render on Browser)
+
+Q) React Packages 
+S : <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+
+Q) Named Exports and default exports ??
+s: 
+Default Exports : Import React from 'react' ; // Default Exports are not kept in curly braces, here React is a    Default Export from 'react' Module.
+   
+Named Exports : Import React, {Component} from 'react' ; //Named Exports are kept in curly braces, here Component is a Named Export .
+
+Q) what are props ?
+S:  they are used to pass data to our components.
+
+Q) what is a controlled Component/controlled Elements ?
+S:  controlled Components does not have their own STATE, it gets all the data via PROPS and notifies changes by raising EVENTS.
+
+NOTE : when we are working with controlled Elements/controlled Components, we cannot use NULL or UNDEFINED, otherwise React thinks that we are working with an Uncontrolled Component.
+
+
