@@ -72,4 +72,20 @@ S:  Controlled Components does not have their own STATE, it gets all the data vi
 
 NOTE : when we are working with Controlled Elements/Controlled Components, we cannot use NULL or UNDEFINED, otherwise React thinks that we are working with an Uncontrolled Component.
 
+Q) what is REST in REST API ?
+S : Representational State Transfer.
+
+NOTE : Endpoints usually work in CRUD Formation
+1. CREATE 
+2. READ 
+3. UPDATE 
+4. DELETE
+
+\\ HTTP REQUEST METHODS with CRUD
+1. CREATE ->  POST REQUESTS - sending information, send Data to BACKEND.
+2. READ -> GET REQUESTS - getting Informtion, request Data from BACKEND.
+3. UPDATE -> PUT REQUESTS - which is the UPDATE of the CRUD - UPDATE Data that's already in the BACKEND.
+4. DELETE -> DELETE REQUESTS - DELETE Data in the Database.
+
+
 
