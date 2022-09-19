@@ -67,9 +67,9 @@ Named Exports : Import React, {Component} from 'react' ; //Named Exports are kep
 Q) what are props ?
 S:  they are used to pass data to our components.
 
-Q) what is a controlled Component/controlled Elements ?
-S:  controlled Components does not have their own STATE, it gets all the data via PROPS and notifies changes by raising EVENTS.
+Q) what is a Controlled Component/Controlled Elements ?
+S:  Controlled Components does not have their own STATE, it gets all the data via PROPS and notifies changes by raising EVENTS.
 
-NOTE : when we are working with controlled Elements/controlled Components, we cannot use NULL or UNDEFINED, otherwise React thinks that we are working with an Uncontrolled Component.
+NOTE : when we are working with Controlled Elements/Controlled Components, we cannot use NULL or UNDEFINED, otherwise React thinks that we are working with an Uncontrolled Component.
 
 
