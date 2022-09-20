@@ -2,7 +2,8 @@ Q) what is React ?
 
 S : A JavaScript library for building fast and Interactive user interfaces.
 It is a simple lightweight library, not a complete framework like angular.
-It's only responsible for rendering the view, nothing more.
+It's only responsible for rendering the view, and managing the DOM.
+It makes sure that what we have in the Browser DOM is in sync with the STATE of our application.
 
 
 npx create-react-app project_Name -> npx create-react-app reactapp (Project Name should not contain Capital Letters) -> this command Installs packages like react,react-DOM and react-scripts with cra-template.
@@ -81,11 +82,52 @@ NOTE : Endpoints usually work in CRUD Formation
 3. UPDATE 
 4. DELETE
 
-\\ HTTP REQUEST METHODS with CRUD
+\\ HTTP REQUEST METHODS with CRUD OPERATIONS.
 1. CREATE ->  POST REQUESTS - sending information, send Data to BACKEND.
 2. READ -> GET REQUESTS - getting Informtion, request Data from BACKEND.
 3. UPDATE -> PUT REQUESTS - which is the UPDATE of the CRUD - UPDATE Data that's already in the BACKEND.
 4. DELETE -> DELETE REQUESTS - DELETE Data in the Database.
+
+
+\\ HTTP REQUEST METHODS
+1. GET -> we use GET for getting data.
+2. POST -> we use POST for Creating Data.
+3. PUT -> we use PUT for updating Data.
+4. DELETE -> we use DELETE for DELETING Data.
+
+\\ Every HTTP REQUEST has a property called METHOD (Request Method) which determines the Intent of that Request.
+
+Q) what is the difference between PUT & PATCH ?
+s: BOTH are used for Updating the data, we use PATCH to update one or more properties, whereas PUT is used to update all properties.
+
+
+Q) what is Await in Javascript ? 
+S: when a method returns a PROMISE, we should Await it to get the Response.
+
+
+// HTTP ERRORS
+
+!!!) EXPECTED ERRORS
+
+1. If we try to delete a post with an Invlid Id, then the SERVER will return a response with a STATUS CODE : 404 - NOT FOUND (because on the SERVER the VALIDATION FAILS).
+
+2. WHEN WE TRY to submit a form with Invlid Data, then the SERVER will return a response with a STATUS CODE : 400 -
+BAD REQUEST.
+
+As we can see, the errors are in the 400 range, IN HTTP PROTOCOL we refer to these errors as CLIENT ERRORS(Errors that happen because the CLIENT did something WRONG).
+
+
+!!!) UNEXPECTED ERRORS : These Errors Technically should not happen under normal circumstances.
+
+1. Network Down : if the Network is down, we won't be able to call the SERVER, this is an Exceptional Situation (this is an unexpected error, becuse the network should not be down).
+
+2. SERVER Down : the Network might be up but maybe the SERVER is down.
+
+3. DATABASE Down : Perhaps, the SERVER is also UP & RUNNING, but the DATABASE is down.
+
+4. BUG : or maybe all these pieces are UP & RUNNING, but we have a BUG in our application code. 
+
+
 
 
 
