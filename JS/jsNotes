@@ -276,8 +276,9 @@ Q) Now, when do we use Factory Functions ?
 S: if our objects have logic then we need a different way to create objects, that's when we use Factory Functions 
 or constructor Functions. (refer E:\CODE_WITH_MOSH\Code with Mosh -  JavaScript Basics for Beginners [AhLaN]\5. Objects--> Factory Functions video)
 
-Q) what are constructor Functions ?
-s : it is a function which is used to construct or create an object .
+Q) what are constructor Functions/Methods ?
+s : it is a function which is used to construct or create an object, it is used to Intialize the object.
+this constructor is called only once when an instance of a class is created.
 
 NOTE : Every Object in JavaScript has a Property called Constructor and that references the function that was used to construct or create that object.
 
@@ -350,7 +351,12 @@ s: 1
 
 Q) what is short circuiting in JS ?
 
-S : false || 1 || 2 --> 1 (no matter once it finds truthy operand value,the evaluation stops,it does not see the after value operands even if we have million operands after that, they are completely ignored. )
+S : false || 1 || 2 --> 1 (no matter once it finds truthy operand value,the evaluation stops,it does not see the after value operands even if we have million operands after that, they are completely ignored. ).
+NOTE : note that this is only wrt OR operator.
+
+
+/// true && 'Hi' -> this gives 'Hi' as the output.
+/// true && 'Hi' && 1 -> this gives 1 as the output.
 
 
 // Default Value Property using Logical Operator with Non-Booleans
@@ -369,3 +375,19 @@ let userColour = undefined;
 let defaultColor = 'white';
 let currentColor = userColour || defaultColor; 
 console.log(currentColor);                          Output --> White
+
+
+Q) Why classes ? ES6 Classes ?
+S: ECMAScript introduced classes in JS, there is a new way to create objects and implement inheritance ie by using Classes, but these classes are not like classes we have in java, c# etc.., they are essentially syntactical sugars over constructor functions in JS, the syntax is cleaner and simpler.
+these classes are essentially functions, they are constructor functions, so classes are objects in JS.
+
+NOTE -> Classes in ES6, enforce the use of new operator. Classes provide a cleaner syntax to implement Inheritance than Prototypical Inheritance.
+
+
+Q) what is PROMISE ?
+S: it is an object that holds the result of an asynchronous operation. so this promise object promises to hold the result of an asynchronous operation, when we create a promise, intially it is in the pending state, when the operation completes that state will change to either resolve or reject, resolve if the operation gets success, reject if the operation gets failed.
+
+// if the promise is resolved it means that the asynchronous operation is completed successfully.
+
+Q) what is an asynchronous operation?
+s: it is an operation that is going to complete in the future. when we send a HTTPRequest, there is going to be a delay until we get the result (5/10 milliseconds..etc...). it does not happen immediately, there is always going to be some delay of some milliseconds or even longer.
