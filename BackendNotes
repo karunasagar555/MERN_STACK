@@ -51,7 +51,13 @@ system, etc.
 
 
 Q) what is Express ?
-S: Express is a framework for building Restful APIs.
+S: Express is a fast and light weight framework for building web applications(Restful APIs/Restful Services).
+a framework gives our application a proper structure, so we can easily add more routes while keeping our application code maintainable. Express gives our application a skeleton/a structure.
+
+NOTE : an Express application is essentially nothing but a bunch of Middleware functions.
+
+NOTE : callback function is also called as Route Handler in express 
+
 
 Q) what is MongoDB ?
 S: MongoDB is the database management system for storing our Data.
@@ -84,3 +90,162 @@ xxxxx.yyyyy.zzzzz
 
 
 NOTE : Frameworks are used for building web applications.
+
+
+
+
+
+/////////////////////// BUILDING RESTFUL APIS WITH EXPRESS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+So, in this section, you learned that:
+
+- REST defines a set of conventions for creating HTTP services:
+
+- POST: to create a resource
+- PUT: to update it
+- GET: to read it
+- DELETE: to delete it 
+
+
+- Express is a simple, minimalistic and lightweight framework for building web 
+servers.
+
+
+
+// Build a web server
+const express = require(‘express’);
+const app = express();
+
+
+
+// Creating a course
+app.post(‘/api/courses’, (req, res) => { 
+ // Create the course and return the course object
+ resn.send(course); 
+});
+
+
+
+// Getting all the courses 
+app.get(‘/api/courses’, (req, res) => { 
+ // To read query string parameters (?sortBy=name)
+ const sortBy = req.query.sortBy;
+ // Return the courses 
+ res.send(courses);
+});
+
+
+// Getting a single course 
+
+app.get(‘/api/courses/:id’, (req, res) => { 
+ const courseId = req.params.id; 
+ 
+ // Lookup the course
+ // If not found, return 404 
+ res.status(404).send(‘Course not found.’);
+
+ // Else, return the course object
+ res.send(course); 
+});
+
+
+// Updating a course 
+app.put(‘/api/courses/:id’, (req, res) => { 
+ // If course not found, return 404, otherwise update it
+ // and return the updated object. 
+});
+
+
+// Deleting a course 
+app.delete(‘/api/courses/:id’, (req, res) => { 
+ // If course not found, return 404, otherwise delete it
+ // and return the deleted object. 
+});
+
+
+// Listen on port 3000
+app.listen(3000, () => console.log(‘Listening…’));
+
+
+- We use Nodemon to watch for changes in files and automatically restart the 
+node process.
+
+
+- We can use environment variables to store various settings for an application. To 
+read an environment variable, we use process.env. 
+
+
+// Reading the port from an environment variable 
+const port = process.env.PORT || 3000;
+app.listen(port);
+
+
+- You should never trust data sent by the client. Always validate! Use Joi package 
+to perform input validation. 
+
+
+
+
+
+
+///////////////////////  EXPRESS : ADVANCED-TOPICS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+So, in this section, you learned that: 
+
+
+
+- A middleware function is a function that takes a request object and either 
+terminates the request/response cycle or passes control to another middleware 
+function.
+
+
+
+- Express has a few built-in middleware functions:
+
+
+- json(): to parse the body of requests with a JSON payload
+
+
+- urlencoded(): to parse the body of requests with URL-encoded payload
+
+
+- static(): to serve static files
+
+
+- You can create custom middleware for cross-cutting concerns, such as logging, 
+authentication, etc. 
+
+
+
+// Custom middleware (applied on all routes) 
+app.use(function(req, res, next)) { 
+ // … 
+ next(); 
+} 
+
+
+
+// Custom middleware (applied on routes starting with /api/admin) 
+app.use(‘/api/admin’, function(req, res, next)) { 
+ // … 
+ next(); 
+} 
+
+
+- We can detect the environment in which our Node application is running 
+(development, production, etc) using process.env.NODE_ENV and 
+app.get(‘env’). 
+
+
+- The config package gives us an elegant way to store configuration settings for 
+our applications. 
+
+
+- We can use the debug package to add debugging information to an application. 
+Prefer this approach to console.log() statements. 
+
+
+- To return HTML markup to the client, use a templating engine. There are various 
+templating engines available out there. Pug, EJS and Mustache are the most 
+popular ones.
