@@ -22,6 +22,12 @@ NOTE : React uses an algorithm called #Diffing, now what's the use of this algo 
 
 React : code-> Diffing Algo -> Virtual DOM -> DOM -> render on Browser
 
+Q) what is state ?
+s: state stores information of our react component.
+
+Q) what is render ?
+s: whenever the state changes in a component the render method is called and that component is re-rendered.
+
 Q) what does this virtual DOM do ?
 s: it identifies the required changes.
 
@@ -74,7 +80,7 @@ S:  Controlled Components does not have their own STATE, it gets all the data vi
 NOTE : when we are working with Controlled Elements/Controlled Components, we cannot use NULL or UNDEFINED, otherwise React thinks that we are working with an Uncontrolled Component.
 
 Q) what is REST in REST API ?
-S : Representational State Transfer.
+S : Representational State Transfer. Rest is basically a convention for building the HTTTP Services.
 
 NOTE : Endpoints usually work in CRUD Formation
 1. CREATE 
@@ -125,7 +131,13 @@ As we can see, the errors are in the 400 range, IN HTTP PROTOCOL we refer to the
 
 3. DATABASE Down : Perhaps, the SERVER is also UP & RUNNING, but the DATABASE is down.
 
-4. BUG : or maybe all these pieces are UP & RUNNING, but we have a BUG in our application code. 
+4. BUG : or maybe all these pieces are UP & RUNNING, but we have a BUG in our application. 
+
+we need to handle these unexpected errors differently, first we need to log them, so in future we can look at our LOG and find errors that should not have happened.
+
+
+Q) what is Axios ?
+S: Axios is a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
 
 
 
