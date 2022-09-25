@@ -30,13 +30,31 @@
     // jsx-> js + xml
     
 
-    // Functional-Component
+    // // Functional-Component
     function Element(){
         return(                            //--> Inside return we write JSX
             <h1>kohli</h1>
         )
     }
-    ReactDOM.render(<Element/>,document.getElementById("root"));
+    // ReactDOM.render(<Element/>,document.getElementById("root"));
+
+    // CODE REUSABILITY
+    // I'm Creating one more functional component below, to print kohli five times.
+
+    function Main(){            /// here Main is a Component  
+        return(
+            <React.Fragment>
+                <Element/>
+                <Element/>
+                <Element/>
+                <Element/>
+                <Element/>
+            </React.Fragment>
+        )
+    }
+    ReactDOM.render(<Main/>, document.getElementById("root"));
+
 
 </script>
 </html>
+
