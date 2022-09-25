@@ -10,22 +10,33 @@
     <title>Functional Components</title>
 </head>
 <body>
-    <div id = "root">Parent</div>
+    <div id = "root">Virat</div>
 </body>
 
-<script>
+<script type ="text/babel">
+    // Normal JS 
     // let ele = document.createElement("h1");
     // ele.innerText = "Child";
     // let root = document.getElementById("root");
     // root.appendChild(ele);
 
     //React
-    let ele = React.createElement("h1",{
-        children : ['Hello']
-    })
-    let root = document.getElementById("root");
-    ReactDOM.render(ele,root);
+    // let ele = React.createElement("h1",{
+    //     children : ['hey']
+    // })
+    // let root = document.getElementById("root");
+    // ReactDOM.render(ele,root);
   
+    // jsx-> js + xml
+    
+
+    // Functional-Component
+    function Element(){
+        return(                            //--> Inside return we write JSX
+            <h1>kohli</h1>
+        )
+    }
+    ReactDOM.render(<Element/>,document.getElementById("root"));
 
 </script>
 </html>
