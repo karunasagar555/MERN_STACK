@@ -31,9 +31,9 @@
     
 
     // // Functional-Component
-    function Element(){
+    function Element({name = "sagar", city = 'Bangalore'}){ ///here Element is a Component,TO BE MORE PRECISE,a FUNCTIONAL COMPONENT,as FUNCTION KEYWORD IS USED.
         return(                            //--> Inside return we write JSX
-            <h1>kohli</h1>
+            <h1>Hello {name} from {city}</h1>
         )
     }
     // ReactDOM.render(<Element/>,document.getElementById("root"));
@@ -41,10 +41,10 @@
     // CODE REUSABILITY
     // I'm Creating one more functional component below, to print kohli five times.
 
-    function Main(){            /// here Main is a Component  
+    function Main(){  ///here Main is a Component,TO BE MORE PRECISE,a FUNCTIONAL COMPONENT,as FUNCTION KEYWORD IS USED.  
         return(
             <React.Fragment>
-                <Element/>
+                <Element name ="Karun" city ="Bangalore"/>
                 <Element/>
                 <Element/>
                 <Element/>
@@ -53,6 +53,7 @@
         )
     }
     ReactDOM.render(<Main/>, document.getElementById("root"));
+    
 
 
 </script>
