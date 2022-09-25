@@ -44,12 +44,34 @@ About React Componenets - they are Isolated, Reusable, Independent pieces of cod
 
 Q) how many types of react components ?
 
-s:  1)Functional Components 2) Class Components
+s:  1) Functional Components - starts with function keyword
+    2) Class Components -starts with Class keyword
 
 
 Q) what is JSX ?
 
-S:  Javascript + XML - > It allows us to write HTML inside of JS and places them in DOM without using functions like createElement() or appendChild() 
+S:  Javascript + XML - > It allows us to write HTML inside of JS and places them in DOM without using functions like createElement() or appendChild(). we write JSX inside return() .
+
+
+Q) WHAT are the rules for using JSX ?
+S: NOT ALLOWED
+1. Varible declaration not allowed. (JSX is written inside return())
+2. Function declaration not allowed.
+3. Loops(for, while, do while) not allowed.
+4. if-else statements are not allowed.
+5. we cannot render objects.
+
+ALTERNATIVES IF the above things are not allowed.
+1. we cannot write a variable inside return(), ie we cannot declare a variable inside return().
+2. we cannot write a function inside return(), ie we cannot declare a function inside return().
+3. we can use Higher-order-Functions such as MAP, FILTER, REDUCE.
+4. we can use Ternary-Operator
+5. we can use arrays rendering
+
+
+
+
+
 
 Q) what does Babel do ?
 
@@ -59,7 +81,9 @@ HTML/CSS/JS -> Browser (render on Browser)
 JSX -> Babel -> JS -> Browser (render on Browser)
 
 Q) React Packages 
-S : <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+S : In order to get access to React's diffing algo and virtual Dom, and babel, we need the below packages.
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
